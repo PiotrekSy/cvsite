@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-scroll'
+// import {Link} from 'react-scroll'
 import {Link as LinkRouter} from "react-router-dom"
 
 const NavBar = () => {
@@ -17,46 +17,35 @@ const NavBar = () => {
                 </div>
                 <div className="navButtonWrapper">
                     <button className="navButton">
-                        <Link className="navButtonLink"
-                              to="whatsUp"
+                        <LinkRouter className="navButtonLink"
+                              to="/about"
                               spy={true}
                               smooth={true}
                               duration={500}>
-                            <p>O co chodzi?</p>
-                        </Link>
+                            <p>O mnie</p>
+                        </LinkRouter>
                     </button>
                 </div>
                 <div className="navButtonWrapper">
                     <button className="navButton">
-                        <Link className="navButtonLink"
-                              to="about"
+                        <LinkRouter className="navButtonLink"
+                              to="portfolio"
                               spy={true}
                               smooth={true}
                               duration={500}>
-                            <p>O nas</p>
-                        </Link>
+                            <p>Prace</p>
+                        </LinkRouter>
                     </button>
                 </div>
                 <div className="navButtonWrapper">
                     <button className="navButton">
-                        <Link className="navButtonLink"
-                              to="organizations"
-                              spy={true}
-                              smooth={true}
-                              duration={500}>
-                            <p>Fundacje i organizacje</p>
-                        </Link>
-                    </button>
-                </div>
-                <div className="navButtonWrapper">
-                    <button className="navButton">
-                        <Link className="navButtonLink"
+                        <LinkRouter className="navButtonLink"
                               to="contact"
                               spy={true}
                               smooth={true}
                               duration={500}>
                             <p>Kontakt</p>
-                        </Link>
+                        </LinkRouter>
                     </button>
                 </div>
             </div>

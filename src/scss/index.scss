@@ -1,0 +1,279 @@
+//reset
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.navbar {
+  background-color: black;
+  height: 100px;
+  width: 100%;
+}
+
+
+//nav and buttons
+
+
+.navigation {
+  @media only screen and (max-width: 999px) {
+    display: none;
+  }
+
+  a {
+    color: #58c4a6;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    align-items: center;
+    height: 10%;
+
+    .navButtons {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      margin-right: 5%;
+
+      .navButtonWrapper {
+        display: flex;
+        height: 70px;
+        min-width: 150px;
+        width: 10vw;
+        justify-content: center;
+        align-items: center;
+
+        .navButton {
+          background: none;
+          color: #58c4a6;
+          border: none;
+          font-size: 2rem;
+          //font-family:
+
+        }
+      }
+    }
+  }
+}
+
+.mobileNavigation {
+  @media only screen and (min-width: 999px) {
+    display: none;
+  }
+  height: 0;
+  background-color: transparent;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    .menu__btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #616161;
+
+    }
+    .menu__btn > span::before {
+      content: '';
+      top: -8px;
+    }
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+    }
+
+    .menu-bars {
+      margin-left: 2rem;
+      font-size: 2rem;
+      background: none;
+    }
+
+    .nav-menu {
+      background-color: #464545;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      transition: 0.2s;
+    }
+
+    .nav-menu.active {
+      right: 0;
+      transition: 0.2s;
+    }
+
+    .nav-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      height: 5rem;
+    }
+
+    .nav-text a {
+      text-decoration: none;
+      color: #232323;
+      font-size: 2rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-text a:hover {
+      background-color: #b4b4b4;
+    }
+
+    .nav-menu-items {
+      width: 100%;
+    }
+
+    .navbar-toggle {
+      background-color: #060b26;
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+  }
+}
+
+.mainPage {
+  color: yellowgreen;
+  font-size: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}

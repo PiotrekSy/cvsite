@@ -1,13 +1,13 @@
 import React from 'react'
 
-const MainPage = () => {
+const About = () => {
     return (
         <>
             <div className="mainPage">
-                <div className="Center">Strona główna</div>
+                <div className="Center">About</div>
             </div>
         </>
     )
 }
 
-export default MainPage
+export default About
