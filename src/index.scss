@@ -1,8 +1,10 @@
+//reset
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
+
 
 html,
 body,
@@ -113,3 +115,47 @@ input {
 }
 
 
+
+
+.navigation {
+
+  a {
+    color: #58c4a6;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  align-items: center;
+  height: 10%;
+
+  .navButtons {
+    display: flex;
+    flex-direction: row;
+
+    .navButtonWrapper {
+      display: flex;
+      border: 1px solid red;
+      width: 5%;
+      justify-content: center;
+      align-items: center;
+
+      .navButton {
+        background: none;
+        color: #58c4a6;
+      }
+    }
+  }
+}
+
+.mainPage {
+  color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
