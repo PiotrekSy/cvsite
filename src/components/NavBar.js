@@ -1,11 +1,9 @@
 import React from "react";
 // import {Link} from 'react-scroll'
 import {Link as LinkRouter} from "react-router-dom"
-import {TransitionGroup, CSSTransition} from 'react-transition-group'
+// import {TransitionGroup, CSSTransition} from 'react-transition-group'
 
 const NavBar = () => {
-
-
 
     return (
         <div className="navigation">
@@ -21,10 +19,7 @@ const NavBar = () => {
                 <div className="navButtonWrapper">
                     <button className="navButton">
                         <LinkRouter className="navButtonLink"
-                                    to="/about"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}>
+                                    to="/about">
                             <p>O mnie</p>
                         </LinkRouter>
                     </button>
@@ -32,10 +27,7 @@ const NavBar = () => {
                 <div className="navButtonWrapper">
                     <button className="navButton">
                         <LinkRouter className="navButtonLink"
-                                    to="projects"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}>
+                                    to="projects">
                             <p>Projects</p>
                         </LinkRouter>
                     </button>
