@@ -5,15 +5,13 @@ import AnimatedRoutes from "./components/AnimatedRoutes.js"
 import {BrowserRouter as Router} from "react-router-dom";
 import MobileNavbar from "./components/MobileNavbar";
 
-
 const App = () => {
 
     return (
-        <Router>
+        <Router className="wholeApp">
             <NavBar/>
             <MobileNavbar/>
             <AnimatedRoutes/>
-
         </Router>
     );
 };

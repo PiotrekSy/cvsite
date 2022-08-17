@@ -1,13 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-
 //reset
 *,
 *:before,
 *:after {
   box-sizing: border-box;
-
-  overflow: hidden;
-
 }
 
 
@@ -68,6 +63,7 @@ video {
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
 
 }
 
@@ -117,11 +113,11 @@ input {
 }
 
 //cała app:
-
 .wholeApp {
   background-color: black;
   width: 100vw;
   height: 100vh;
+
 }
 
 //nav and buttons:
@@ -131,42 +127,38 @@ input {
     display: none;
   }
 
-  a {
-    color: #58c4a6;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
   @media only screen and (min-width: 1000px) {
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
 
     position: absolute;
-    top: 5%;
+    top: 30px;
     width: 100%;
     align-items: center;
-    height: 10%;
+    height: 100%;
+    right: 30px;
 
     .navButtons {
       display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      margin-right: 5%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+
 
       .navButtonWrapper {
         display: flex;
-        height: 70px;
-        min-width: 150px;
-        width: 10vw;
+        position: relative;
+        height: 80px;
+        width: 80px;
+        margin-bottom: 10px;
+        background: black;
         justify-content: center;
         align-items: center;
 
-        .navButton {
-          background: none;
-          color: #c2e8db;
-          border: none;
-          font-size: 2rem;
-          font-family: 'Satisfy', cursive;
-
-        }
       }
     }
   }
@@ -195,27 +187,7 @@ input {
       height: 46px;
       cursor: pointer;
       z-index: 1;
-
-      .menu__btn > span,
-      .menu__btn > span::before,
-      .menu__btn > span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        background-color: #505050;
-      }
-
-      .menu__btn > span::before {
-        content: '';
-        top: -15px;
-
-      }
-
-      .menu__btn > span::after {
-        content: '';
-        top: 15px;
-      }
+      background-image: url("../menu_FILL0_wght400_GRAD0_opsz48.svg");
     }
 
     .nav-menu {
@@ -237,7 +209,6 @@ input {
     }
 
     .nav-text {
-      font-family: 'Satisfy', cursive;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -295,7 +266,6 @@ input {
 //specific sections:
 
 .mainPage {
-  font-family: 'Satisfy', cursive;
   color: yellowgreen;
   font-size: 10vh;
   display: flex;
@@ -303,11 +273,10 @@ input {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: #ffffff;
 }
 
 .about {
-  font-family: 'Satisfy', cursive;
   color: yellowgreen;
   font-size: 10vh;
   display: flex;
@@ -315,11 +284,10 @@ input {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #2f183d;
+  background-color: #ffffff;
 }
 
 .projects {
-  font-family: 'Satisfy', cursive;
   color: #0f100f;
   font-size: 10vh;
   display: flex;
@@ -327,11 +295,10 @@ input {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #a2c986;
+  background-color: #ffffff;
 }
 
 .contact {
-  font-family: 'Satisfy', cursive;
   color: yellowgreen;
   font-size: 10vh;
   display: flex;
@@ -339,5 +306,5 @@ input {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #a42424;
+  background-color: #ffffff;
 }

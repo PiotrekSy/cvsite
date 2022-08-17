@@ -1,50 +1,26 @@
 import React from "react";
-// import {Link} from 'react-scroll'
 import {Link as LinkRouter} from "react-router-dom"
-// import {TransitionGroup, CSSTransition} from 'react-transition-group'
 
 const NavBar = () => {
 
     return (
         <div className="navigation">
             <div className="navButtons">
-                <div className="navButtonWrapper">
-                    <button className="navButton">
-                        <LinkRouter className="navButtonLink"
-                                    to="/">
-                            <p>Start</p>
-                        </LinkRouter>
-                    </button>
-                </div>
-                <div className="navButtonWrapper">
-                    <button className="navButton">
-                        <LinkRouter className="navButtonLink"
-                                    to="/about">
-                            <p>O mnie</p>
-                        </LinkRouter>
-                    </button>
-                </div>
-                <div className="navButtonWrapper">
-                    <button className="navButton">
-                        <LinkRouter className="navButtonLink"
-                                    to="projects">
-                            <p>Projects</p>
-                        </LinkRouter>
-                    </button>
-                </div>
-                <div className="navButtonWrapper">
-                    <button className="navButton">
-                        <LinkRouter className="navButtonLink"
-                                    to="contact"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}>
-                            <p>Kontakt</p>
-                        </LinkRouter>
-                    </button>
-                </div>
+                <LinkRouter className="navButtonLink" to="/">
+                    <div className="navButtonWrapper">HOME</div>
+                </LinkRouter>
+                <LinkRouter className="navButtonLink" to="/about">
+                    <div className="navButtonWrapper">SKILLS</div>
+                </LinkRouter>
+                <LinkRouter className="navButtonLink" to="/projects">
+                    <div className="navButtonWrapper">PROJECTS</div>
+                </LinkRouter>
+                <LinkRouter className="navButtonLink" to="/contact">
+                    <div className="navButtonWrapper">CONTACT</div>
+                </LinkRouter>
             </div>
-        </div>)
+        </div>
+    )
 }
 
 export default NavBar
