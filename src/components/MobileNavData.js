@@ -1,23 +1,23 @@
 export const MobileNavData = [
     {
-        title: 'HOME',
+        title: 'Home',
         path: '/',
-        cName: 'nav-text'
+        className: 'nav-text'
     },
     {
-        title: 'ABOUT ME',
+        title: 'About me',
         path: '/About',
-        cName: 'nav-text'
+        className: 'nav-text'
     },
     {
-        title: 'PORTFOLIO',
-        path: '/Portfolio',
-        cName: 'nav-text'
+        title: 'Projects',
+        path: '/Projects',
+        className: 'nav-text'
     },
     {
-        title: 'CONTACT',
+        title: 'Contact',
         path: '/Contact',
-        cName: 'nav-text'
+        className: 'nav-text'
     },
 
 ];

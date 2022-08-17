@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 //reset
 *,
 *:before,
@@ -117,6 +119,15 @@ input {
 
 //nav and buttons
 
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.25s ease-in;
+}
 
 .navigation {
   @media only screen and (max-width: 999px) {
@@ -130,6 +141,7 @@ input {
   }
 
   @media only screen and (min-width: 1000px) {
+
     position: absolute;
     top: 5%;
     width: 100%;
@@ -152,10 +164,10 @@ input {
 
         .navButton {
           background: none;
-          color: #58c4a6;
+          color: #c2e8db;
           border: none;
           font-size: 2rem;
-          //font-family:
+          font-family: 'Satisfy', cursive;
 
         }
       }
@@ -180,40 +192,37 @@ input {
 
     .menu__btn {
       position: fixed;
-      top: 20px;
-      right: 20px;
-      width: 26px;
-      height: 26px;
+      top: 7%;
+      right: 7%;
+      width: 46px;
+      height: 46px;
       cursor: pointer;
       z-index: 1;
-    }
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: #616161;
 
-    }
-    .menu__btn > span::before {
-      content: '';
-      top: -8px;
-    }
-    .menu__btn > span::after {
-      content: '';
-      top: 8px;
-    }
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #505050;
+      }
 
-    .menu-bars {
-      margin-left: 2rem;
-      font-size: 2rem;
-      background: none;
+      .menu__btn > span::before {
+        content: '';
+        top: -15px;
+
+      }
+
+      .menu__btn > span::after {
+        content: '';
+        top: 15px;
+      }
     }
 
     .nav-menu {
-      background-color: #464545;
+      background-color: #939090;
       width: 100vw;
       height: 100vh;
       display: flex;
@@ -231,10 +240,14 @@ input {
     }
 
     .nav-text {
+      font-family: 'Satisfy', cursive;
       display: flex;
       justify-content: center;
       align-items: center;
+      justify-self: center;
+      align-self: center;
       list-style: none;
+      width: 100vw;
       height: 5rem;
     }
 
@@ -244,30 +257,46 @@ input {
       font-size: 2rem;
       width: 100%;
       height: 100%;
+      justify-self: center;
+      align-self: center;
       display: flex;
       align-items: center;
     }
 
-    .nav-text a:hover {
-      background-color: #b4b4b4;
+    a {
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-menu-items a:hover {
+      background-color: #5e5e5e;
     }
 
     .nav-menu-items {
-      width: 100%;
+      justify-self: center;
+      align-self: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100vw;
     }
 
     .navbar-toggle {
-      background-color: #060b26;
+      background-color: #ffffff;
       width: 100%;
       height: 80px;
       display: flex;
-      justify-content: start;
+      justify-self: center;
+      align-self: center;
+      justify-content: center;
       align-items: center;
     }
   }
 }
 
 .mainPage {
+  font-family: 'Satisfy', cursive;
   color: yellowgreen;
   font-size: 10vh;
   display: flex;
@@ -276,4 +305,40 @@ input {
   height: 100vh;
   width: 100vw;
   background-color: black;
+}
+
+.about {
+  font-family: 'Satisfy', cursive;
+  color: yellowgreen;
+  font-size: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2f183d;
+}
+
+.projects {
+  font-family: 'Satisfy', cursive;
+  color: #0f100f;
+  font-size: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #a2c986;
+}
+
+.contact {
+  font-family: 'Satisfy', cursive;
+  color: yellowgreen;
+  font-size: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #a42424;
 }
