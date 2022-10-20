@@ -2,16 +2,15 @@ import './scss/App.scss';
 import React from "react";
 import NavBar from "./components/NavBar.js"
 import AnimatedRoutes from "./components/AnimatedRoutes.js"
-import {BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import MobileNavbar from "./components/MobileNavbar";
 
 const App = () => {
-
     return (
-        <Router className="wholeApp">
-            <NavBar/>
-            <MobileNavbar/>
-            <AnimatedRoutes/>
+        <Router>
+            <NavBar />
+            <MobileNavbar />
+            <AnimatedRoutes />
         </Router>
     );
 };
