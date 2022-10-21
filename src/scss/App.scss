@@ -66,6 +66,8 @@ video {
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
   font-family: "Roboto Condensed", sans-serif;
+  color: inherit; 
+  text-decoration: inherit; 
 }
 
 footer,
@@ -264,6 +266,40 @@ input {
 //specific sections:
 
 .mainPage {
+  height: 100vh;
+  width: 100vw;
+  background-color: #181717;
+
+  .contactArea {
+    height: 30vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    .contactText {
+      color: #ffffff;
+    }
+    .name {
+      font-size: 4rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .mail {
+      font-size: 1.5rem;
+    }
+    .linkedIn {
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.skills {
   color: yellowgreen;
   font-size: 10vh;
   display: flex;
@@ -274,17 +310,6 @@ input {
   background-color: #181717;
 }
 
-.about {
-  color: yellowgreen;
-  font-size: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background-color: #ffffff;
-}
-
 .projects {
   color: #0f100f;
   font-size: 10vh;
@@ -293,10 +318,10 @@ input {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #ffffff;
+  background-color: #181717;
 }
 
-.contact {
+.aboutMe {
   color: yellowgreen;
   font-size: 10vh;
   display: flex;
@@ -304,5 +329,5 @@ input {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #ffffff;
+  background-color: #181717;
 }

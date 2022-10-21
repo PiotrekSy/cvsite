@@ -5,8 +5,8 @@ export const MobileNavData = [
         className: 'nav-text'
     },
     {
-        title: 'About me',
-        path: '/About',
+        title: 'Skills',
+        path: '/Skills',
         className: 'nav-text'
     },
     {
@@ -15,8 +15,8 @@ export const MobileNavData = [
         className: 'nav-text'
     },
     {
-        title: 'Contact',
-        path: '/Contact',
+        title: 'About me',
+        path: '/AboutMe',
         className: 'nav-text'
     },
 

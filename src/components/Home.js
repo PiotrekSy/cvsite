@@ -3,15 +3,10 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
-
-
 const Home = () => {
 
     const particlesInit = useCallback(async (engine) => {
         console.log(engine);
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
         await loadFull(engine);
     }, []);
 
@@ -20,8 +15,23 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="projects">
-            <div className="mainPage"></div>
+        <>
+            <div className="mainPage">
+                <div className="contactArea">
+                    <div className="contactText name">PIOTR SYJUD</div>
+                    <div className="contactText title">Front-end Developer</div>
+                    <div className="contactText mail">piotrsyjud@gmail.com</div>
+                    <div className="contactText linkedIn"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">linkedIn</a></div>
+                    <div className="contactText linkedIn"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">linkedIn</a></div>
+                    <div className="contactText linkedIn"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">linkedIn</a></div>
+                    <div className="contactText linkedIn"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">linkedIn</a></div>
+                    <div className="contactText linkedIn"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">linkedIn</a></div>
+
+
+
+
+                </div>
+            </div>
             <Particles
                 id="tsparticles"
                 init={particlesInit}
@@ -99,7 +109,7 @@ const Home = () => {
                     detectRetina: true,
                 }}
             />
-        </div>
+        </>
     )
 }
 

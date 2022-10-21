@@ -7,16 +7,16 @@ const NavBar = () => {
         <div className="navigation">
             <div className="navButtons">
                 <LinkRouter className="navButtonLink" to="/">
-                    <div className="navButtonWrapper">HOME</div>
+                    <div className="navButtonWrapper navHome">HOME</div>
                 </LinkRouter>
-                <LinkRouter className="navButtonLink" to="/about">
-                    <div className="navButtonWrapper">SKILLS</div>
+                <LinkRouter className="navButtonLink" to="/skills">
+                    <div className="navButtonWrapper navSkills">SKILLS</div>
                 </LinkRouter>
                 <LinkRouter className="navButtonLink" to="/projects">
-                    <div className="navButtonWrapper">PROJECTS</div>
+                    <div className="navButtonWrapper navProjects">PROJECTS</div>
                 </LinkRouter>
                 <LinkRouter className="navButtonLink" to="/contact">
-                    <div className="navButtonWrapper">CONTACT</div>
+                    <div className="navButtonWrapper navAboutMe">ABOUT ME</div>
                 </LinkRouter>
             </div>
         </div>

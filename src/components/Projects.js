@@ -4,7 +4,6 @@ const Projects = () => {
     return (
         <div className="projects">
             <div className="Center">Portfolio</div>
-            <p><br />text</p>
         </div>
     )
 }
