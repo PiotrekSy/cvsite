@@ -2,6 +2,7 @@ import React from 'react'
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+import { motion } from "framer-motion";
 
 const Home = () => {
 
@@ -15,21 +16,16 @@ const Home = () => {
     }, []);
 
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0, transition: { duration: 0.5 } }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0, transition: { duration: 0.5 } }}>
             <div className="mainPage">
                 <div className="contactArea">
-                    <div className="contactText name">PIOTR SYJUD</div>
-                    <div className="contactText title">Front-end Developer</div>
-                    <div className="contactText mail">piotrsyjud@gmail.com</div>
-                    <div className="contactText linkedIn"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">linkedIn</a></div>
-                    <div className="contactText linkedIn"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">linkedIn</a></div>
-                    <div className="contactText linkedIn"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">linkedIn</a></div>
-                    <div className="contactText linkedIn"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">linkedIn</a></div>
-                    <div className="contactText linkedIn"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">linkedIn</a></div>
-
-
-
-
+                    <div className="contactText name" inactive>PIOTR SYJUD</div>
+                    <div className="contactText title">FRONT-END DEVELOPER</div>
+                    <div className="contactText linkedIn"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+                    <div className="contactText gitHub"><a href="https://github.com/PiotrekSy" target="_blank" rel="noreferrer">GitHub</a></div>
                 </div>
             </div>
             <Particles
@@ -109,7 +105,7 @@ const Home = () => {
                     detectRetina: true,
                 }}
             />
-        </>
+        </motion.div>
     )
 }
 
