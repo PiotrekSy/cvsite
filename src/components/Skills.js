@@ -4,9 +4,9 @@ import { motion } from "framer-motion"
 const Skills = () => {
     return (
         <motion.div className="skills"
-            initial={{ opacity: 0, transition: { duration: 0.5 } }}
+            initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.5 } }}>
+            exit={{ opacity: 0, transition: { duration: 0.2 } }}>
             <div className="bothDivs">
                 <div className="skillsSection">
                     <span>TECHNOLOGIES I MAINLY USE:</span>
@@ -59,7 +59,7 @@ const Skills = () => {
                         <span>- TEAM PLAYER</span>
                         <span>- PROPER LEVEL OF SOFT SKILLS</span>
                         <span>- POLISH/ENGLISH SPEAKER</span>
-                        <span>- </span>
+                        <span>- FAST LEARNER</span>
 
                     </div>
                 </div>

@@ -7,19 +7,19 @@ import { motion } from "framer-motion";
 const Home = () => {
 
     const particlesInit = useCallback(async (engine) => {
-        console.log(engine);
+        // console.log(engine);
         await loadFull(engine);
     }, []);
 
     const particlesLoaded = useCallback(async (container) => {
-        await console.log(container);
+        // await console.log(container);
     }, []);
 
     return (
         <motion.div
-            initial={{ opacity: 0, transition: { duration: 0.5 } }}
+            initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.5 } }}>
+            exit={{ opacity: 0, transition: { duration: 0.2 } }}>
             <div className="mainPage">
                 <div className="contactArea">
                     <div className="contactText name">PIOTR SYJUD</div>
@@ -38,7 +38,7 @@ const Home = () => {
                             // value: "#000000",
                         },
                     },
-                    fpsLimit: 120,
+                    fpsLimit: 60,
                     interactivity: {
                         events: {
                             onClick: {
