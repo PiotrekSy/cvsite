@@ -1,5 +1,5 @@
 import React from "react";
-import {Link as LinkRouter} from "react-router-dom"
+import { Link as LinkRouter } from "react-router-dom"
 
 const NavBar = () => {
 
@@ -15,7 +15,7 @@ const NavBar = () => {
                 <LinkRouter className="navButtonLink" to="/projects">
                     <div className="navButtonWrapper navProjects">PROJECTS</div>
                 </LinkRouter>
-                <LinkRouter className="navButtonLink" to="/contact">
+                <LinkRouter className="navButtonLink" to="/aboutMe">
                     <div className="navButtonWrapper navAboutMe">ABOUT ME</div>
                 </LinkRouter>
             </div>
