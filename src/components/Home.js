@@ -22,7 +22,7 @@ const Home = () => {
             exit={{ opacity: 0, transition: { duration: 0.5 } }}>
             <div className="mainPage">
                 <div className="contactArea">
-                    <div className="contactText name" inactive>PIOTR SYJUD</div>
+                    <div className="contactText name">PIOTR SYJUD</div>
                     <div className="contactText title">FRONT-END DEVELOPER</div>
                     <div className="contactText linkedIn"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">LinkedIn</a></div>
                     <div className="contactText gitHub"><a href="https://github.com/PiotrekSy" target="_blank" rel="noreferrer">GitHub</a></div>

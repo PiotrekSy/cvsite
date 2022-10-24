@@ -474,6 +474,10 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        .textList {
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
   }

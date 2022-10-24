@@ -52,8 +52,15 @@ const Skills = () => {
                     </div>
                 </div>
                 <div className="textColumn">
-                    <span>asdasdasdsa</span>
-                    <div>
+                    <span>SKILLS:</span>
+                    <div className="textList">
+                        <span>- SKILL AT SOLVING PROBLEMS</span>
+                        <span>- GREAT EXPERIENCE IN CONTACT WITH CLIENTS</span>
+                        <span>- TEAM PLAYER</span>
+                        <span>- PROPER LEVEL OF SOFT SKILLS</span>
+                        <span>- POLISH/ENGLISH SPEAKER</span>
+                        <span>- </span>
+
                     </div>
                 </div>
             </div>
