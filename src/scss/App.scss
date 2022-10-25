@@ -101,7 +101,6 @@ table {
 }
 
 input {
-  -webkit-appearance: none;
   border-radius: 0;
 }
 
@@ -335,8 +334,8 @@ html {
     }
   }
 }
-@media (min-width: 1000px) {
-  .skills {
+.skills {
+  @media (min-width: 1000px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -484,23 +483,71 @@ html {
 }
 
 .projects {
-  color: yellowgreen;
-  font-size: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background-color: #181717;
+  @media (min-width: 1000px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #181717;
+    .container {
+      background-color: #302f2f;
+      border-radius: 30px;
+      position: absolute;
+      right: 5vw;
+      padding: 5vh;
+      height: 90vh;
+      width: 70vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }
-
 .aboutMe {
-  color: yellowgreen;
-  font-size: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background-color: #181717;
+  @media (min-width: 1000px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #181717;
+    .container {
+      background-color: #302f2f;
+      border-radius: 30px;
+      position: absolute;
+      right: 5vw;
+      padding: 5vh;
+      height: 90vh;
+      width: 70vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .text {
+        width: 50%;
+        color: white;
+        font-size: clamp(1rem, -0.875rem + 2.6vw, 1.8rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 1rem;
+
+        .name {
+          font-size: clamp(2rem, 2rem + 2.6vw, 3rem);
+        }
+        .schools {
+          font-size: clamp(1rem, 1rem + 2.6vw, 1.2rem);
+        }
+      }
+      .photo {
+        height: 75vh;
+        width: 35vw;
+        background: url("../../icons/IMG_7687\ m.jpg") no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
 }

@@ -6,8 +6,13 @@ const Projects = () => {
         <motion.div className="projects"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: {duration: 0.2} }}>
-            <div className="">Portfolio</div>
+            exit={{ opacity: 0, transition: { duration: 0.2 } }}>
+            <div className="container">
+                <div className="item"></div>
+                <div className="item"></div>
+                <div className="item"></div>
+                <div className="item"></div>
+            </div>
         </motion.div>
     )
 }
