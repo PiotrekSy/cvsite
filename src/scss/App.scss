@@ -499,10 +499,11 @@ html {
       height: 90vh;
       width: 70vw;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      .firstRow {
+      .firstRow,
+      .secondRow {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -514,14 +515,30 @@ html {
           flex-direction: column;
           justify-content: space-evenly;
           align-items: center;
-          height: 60%;
-          width: 30%;
-          background-color: rgb(106, 104, 104);
+          height: 70%;
+          width: 33%;
+          background-color: rgb(83, 81, 81);
           margin: 1vw;
           border-radius: 25px;
           border: 5px solid black;
+          .projectName {
+            font-size: 1.3rem;
+          }
 
+          .resumeIcon {
+            margin-top: 1vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60%;
+            width: 60%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url("../../icons/resumeIcon.png");
+          }
           .foodIcon {
+            margin-top: 1vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -533,6 +550,7 @@ html {
             background-image: url("../../icons/pngwing.com.png");
           }
           .clothesIcon {
+            margin-top: 1vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -543,18 +561,34 @@ html {
             background-repeat: no-repeat;
             background-image: url("../../icons/wieszak.png");
           }
+          .questionIcon {
+            margin-top: 1vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60%;
+            width: 60%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url("../../icons/questionMark.png");
+          }
           .link {
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 80%;
 
             a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
               border-radius: 10px;
-              height: rem;
-              width: 40%;
+              height: 3rem;
+              width: 90%;
               background-color: #181717;
               color: white;
-              margin: 1vw;
+              margin: 0.5rem;
             }
           }
         }
