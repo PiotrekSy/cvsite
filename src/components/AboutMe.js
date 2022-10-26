@@ -26,9 +26,15 @@ const AboutMe = () => {
                         <li>CodersLab IT School – Node.js - in progress</li>
                     </div>
                     <div className="links">
-                        <div>My Resume</div>
-                        <div>My Resume</div>
-                        <div>My Resume</div>
+                        <a href="/" className="resumeLink"><div className="resumeIcon"></div></a>
+                        <a href="https://www.linkedin.com/in/piotrsyjud/"
+                            target="_blank" rel="noreferrer" className="resumeLink">
+                            <div className="linkedInIcon"></div>
+                        </a>
+                        <a href="https://github.com/PiotrekSy"
+                            target="_blank" rel="noreferrer" className="resumeLink">
+                            <div className="gitHubIcon"></div>
+                        </a>
                     </div>
                 </div>
                 <div className="photo"></div>

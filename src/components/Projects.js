@@ -34,7 +34,7 @@ const Projects = () => {
                         <div className="projectName">ZaplanujJedzonko</div>
                         <div className="link">
                             <a href="https://zaplanujjedzonko-ps.netlify.app/"
-                                target="_blank" rel="noreferrer"><div className="gwebAppHubIcon"></div></a>
+                                target="_blank" rel="noreferrer"><div className="webAppIcon"></div></a>
                             <a href="https://github.com/PiotrekSy/zaplanuj_jedzonko"
                                 target="_blank" rel="noreferrer"><div className="gitHubIcon"></div></a>
                         </div>

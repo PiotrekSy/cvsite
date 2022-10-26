@@ -483,6 +483,133 @@ html {
 }
 
 .projects {
+  @media (max-width: 999px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #181717;
+    .container {
+      background-color: #302f2f;
+      border-radius: 30px;
+      position: absolute;
+      right: 5vw;
+      padding: 5vh;
+      height: 90vh;
+      width: 70vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      .firstRow,
+      .secondRow {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+        .item {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 70%;
+          width: 33%;
+          background-color: rgb(83, 81, 81);
+          margin: 1vw;
+          border-radius: 25px;
+          border: 5px solid black;
+          .projectName {
+            font-size: 1.3rem;
+          }
+
+          .resumeIcon {
+            margin-top: 1vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60%;
+            width: 60%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url("../../icons/resumeIcon.png");
+          }
+          .foodIcon {
+            margin-top: 1vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60%;
+            width: 60%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url("../../icons/pngwing.com.png");
+          }
+          .clothesIcon {
+            margin-top: 1vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60%;
+            width: 60%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url("../../icons/wieszak.png");
+          }
+          .questionIcon {
+            margin-top: 1vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60%;
+            width: 60%;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url("../../icons/questionMark.png");
+          }
+          .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 10px;
+              height: 3rem;
+              width: 90%;
+              background-color: #181717;
+              color: white;
+              margin: 0.5rem;
+
+              .gitHubIcon {
+                background-image: url("../../icons/gitHub.png");
+                background-size: contain;
+                background-position: center;
+                height: 2rem;
+                width: 2rem;
+              }
+              .webAppIcon {
+                background-image: url("../../icons/webApp.png");
+                background-size: contain;
+                background-position: center;
+                height: 2rem;
+                width: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   @media (min-width: 1000px) {
     display: flex;
     justify-content: center;
@@ -591,7 +718,7 @@ html {
               margin: 0.5rem;
 
               .gitHubIcon {
-                background-image: url("../../icons/github).png");
+                background-image: url("../../icons/gitHub.png");
                 background-size: contain;
                 background-position: center;
                 height: 2rem;
@@ -646,6 +773,59 @@ html {
         }
         .schools {
           font-size: clamp(1rem, 1rem + 2.6vw, 1.2rem);
+        }
+        .links {
+          height: 10vh;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+                    
+          .resumeLink {
+            border: 2px solid black;
+            height: 3rem;
+            width: 32%;
+            background-color: #5e5e5e;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            .resumeIcon {
+              margin-top: 1vh;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 60%;
+              width: 60%;
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-image: url("../../icons/resumeIcon.png");
+            }
+            .linkedInIcon {
+              margin-top: 1vh;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 60%;
+              width: 60%;
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-image: url("../../icons/linkedIn.png");
+            }
+            .gitHubIcon {
+              margin-top: 1vh;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 60%;
+              width: 60%;
+              background-position: center;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-image: url("../../icons/gitHub.png");
+            }
+          }
         }
       }
       .photo {
