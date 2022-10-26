@@ -4,7 +4,7 @@ import { Link as LinkRouter } from "react-router-dom"
 const NavBar = () => {
 
     return (
-        <div className="navigation">
+        <div className="navigation unselectable">
             <div className="navButtons">
                 <LinkRouter className="navButtonLink" to="/">
                     <div className="navButtonWrapper navHome">HOME</div>

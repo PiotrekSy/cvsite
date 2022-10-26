@@ -22,10 +22,10 @@ const Home = () => {
             exit={{ opacity: 0, transition: { duration: 0.8 } }}>
             <div className="mainPage">
                 <div className="contactArea">
-                    <div className="contactText name">PIOTR SYJUD</div>
-                    <div className="contactText title">FRONT-END DEVELOPER</div>
-                    <div className="contactText linkedIn"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">LinkedIn</a></div>
-                    <div className="contactText gitHub"><a href="https://github.com/PiotrekSy" target="_blank" rel="noreferrer">GitHub</a></div>
+                    <div className="contactText name unselectable">PIOTR SYJUD</div>
+                    <div className="contactText title unselectable">FRONT-END DEVELOPER</div>
+                    <div className="contactText linkedIn unselectable"><a href="https://www.linkedin.com/in/piotrsyjud/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+                    <div className="contactText gitHub unselectable"><a href="https://github.com/PiotrekSy" target="_blank" rel="noreferrer">GitHub</a></div>
                 </div>
             </div>
             <Particles

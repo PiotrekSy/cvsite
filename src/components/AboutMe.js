@@ -9,10 +9,10 @@ const AboutMe = () => {
             exit={{ opacity: 0, transition: { duration: 0.8 } }}>
             <div className="container">
                 <div className="text">
-                    <div className="name">Piotr Syjud</div>
-                    <div>Kraków, Poland<br />piotrsyjud@gmail.com</div>
+                    <div className="name unselectable">Piotr Syjud</div>
+                    <div className="unselectable">Kraków, Poland<br />piotrsyjud@gmail.com</div>
                     <br />
-                    <span>My professional career has been so far associated with the construction industry,
+                    <span className="unselectable">My professional career has been so far associated with the construction industry,
                         where I have held several roles. Due to my passion for new technologies,
                         I decided to change my career path and tie my future to the IT industry.
                         I like to explore new technologies and work in a team. Solving problems and
@@ -20,7 +20,7 @@ const AboutMe = () => {
                         My strength is calmness, analytical thinking,
                         and the ability to work under time pressure.<br />
                     </span>
-                    <div className="schools"><br />Currently finished courses:<br />
+                    <div className="schools unselectable"><br />Currently finished courses:<br />
                         <li>CodersLab IT School – JavaScript Developer </li>
                         <li>CodersLab IT School – Docker </li>
                         <li>CodersLab IT School – Node.js - in progress</li>
@@ -39,8 +39,7 @@ const AboutMe = () => {
                 </div>
                 <div className="photo"></div>
             </div>
-
-        </motion.div >
+        </motion.div>
     )
 }
 
