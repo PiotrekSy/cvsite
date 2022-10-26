@@ -18,8 +18,8 @@ const Home = () => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.2 } }}>
+            animate={{ opacity: 1, transition: { duration: 0.8 } }}
+            exit={{ opacity: 0, transition: { duration: 0.8 } }}>
             <div className="mainPage">
                 <div className="contactArea">
                     <div className="contactText name">PIOTR SYJUD</div>
@@ -38,7 +38,7 @@ const Home = () => {
                             // value: "#000000",
                         },
                     },
-                    fpsLimit: 60,
+                    fpsLimit: 120,
                     interactivity: {
                         events: {
                             onClick: {

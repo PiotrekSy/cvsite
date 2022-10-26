@@ -5,8 +5,8 @@ const Skills = () => {
     return (
         <motion.div className="skills"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0, transition: { duration: 0.2 } }}>
+            animate={{ opacity: 1, transition: { duration: 0.8 } }}
+            exit={{ opacity: 0, transition: { duration: 0.8 } }}>
             <div className="bothDivs">
                 <div className="skillsSection">
                     <span>TECHNOLOGIES I MAINLY USE:</span>
@@ -46,7 +46,7 @@ const Skills = () => {
                             </div>
                             <div className="item">
                                 <div className="api"></div>
-                                <div className="technologyName">REST API</div>
+                                <div className="technologyName">EXTERNAL APIS</div>
                             </div>
                         </div>
                     </div>
