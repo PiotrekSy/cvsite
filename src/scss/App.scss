@@ -589,6 +589,21 @@ html {
               background-color: #181717;
               color: white;
               margin: 0.5rem;
+
+              .gitHubIcon {
+                background-image: url("../../icons/github).png");
+                background-size: contain;
+                background-position: center;
+                height: 2rem;
+                width: 2rem;
+              }
+              .webAppIcon {
+                background-image: url("../../icons/webApp.png");
+                background-size: contain;
+                background-position: center;
+                height: 2rem;
+                width: 2rem;
+              }
             }
           }
         }

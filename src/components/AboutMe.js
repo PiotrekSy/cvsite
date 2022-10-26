@@ -10,7 +10,7 @@ const AboutMe = () => {
             <div className="container">
                 <div className="text">
                     <div className="name">Piotr Syjud</div>
-                    <div>Kraków<br />piotrsyjud@gmail.com</div>
+                    <div>Kraków, Poland<br />piotrsyjud@gmail.com</div>
                     <br />
                     <span>My professional career has been so far associated with the construction industry,
                         where I have held several roles. Due to my passion for new technologies,
@@ -24,6 +24,11 @@ const AboutMe = () => {
                         <li>CodersLab IT School – JavaScript Developer </li>
                         <li>CodersLab IT School – Docker </li>
                         <li>CodersLab IT School – Node.js - in progress</li>
+                    </div>
+                    <div className="links">
+                        <div>My Resume</div>
+                        <div>My Resume</div>
+                        <div>My Resume</div>
                     </div>
                 </div>
                 <div className="photo"></div>

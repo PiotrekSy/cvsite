@@ -14,9 +14,9 @@ const Projects = () => {
                         <div className="projectName">ResumeSite</div>
                         <div className="link">
                             <a href="/"
-                                target="_blank" rel="noreferrer">This Site</a>
+                                target="_blank" rel="noreferrer">Home</a>
                             <a href="https://github.com/PiotrekSy/cvsite"
-                                target="_blank" rel="noreferrer">GitHub</a>
+                                target="_blank" rel="noreferrer"><div className="gitHubIcon"></div></a>
                         </div>
                     </div>
                     <div className="item">
@@ -24,9 +24,9 @@ const Projects = () => {
                         <div className="projectName">GiveAwayApp </div>
                         <div className="link">
                             <a href="https://giveawaysite.netlify.app/"
-                                target="_blank" rel="noreferrer">App</a>
+                                target="_blank" rel="noreferrer"><div className="webAppIcon"></div></a>
                             <a href="https://github.com/PiotrekSy/GiveAway"
-                                target="_blank" rel="noreferrer">GitHub</a>
+                                target="_blank" rel="noreferrer"><div className="gitHubIcon"></div></a>
                         </div>
                     </div>
                     <div className="item">
@@ -34,9 +34,9 @@ const Projects = () => {
                         <div className="projectName">ZaplanujJedzonko</div>
                         <div className="link">
                             <a href="https://zaplanujjedzonko-ps.netlify.app/"
-                                target="_blank" rel="noreferrer">App</a>
+                                target="_blank" rel="noreferrer"><div className="gwebAppHubIcon"></div></a>
                             <a href="https://github.com/PiotrekSy/zaplanuj_jedzonko"
-                                target="_blank" rel="noreferrer">GitHub</a>
+                                target="_blank" rel="noreferrer"><div className="gitHubIcon"></div></a>
                         </div>
                     </div>
                 </div>
@@ -45,24 +45,24 @@ const Projects = () => {
                         <div className="questionIcon"></div>
                         <div className="projectName">Comming soon </div>
                         <div className="link">
-                            <a href="/" target="_blank" rel="noreferrer">App</a>
-                            <a href="blank" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="/" target="_blank" rel="noreferrer"><div className="webAppIcon"></div></a>
+                            <a href="/" target="_blank" rel="noreferrer"><div className="gitHubIcon"></div></a>
                         </div>
                     </div>
                     <div className="item">
                         <div className="questionIcon"></div>
                         <div className="projectName">Comming soon </div>
                         <div className="link">
-                            <a href="/" target="_blank" rel="noreferrer">App</a>
-                            <a href="blank" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="/" target="_blank" rel="noreferrer"><div className="webAppIcon"></div></a>
+                            <a href="/" target="_blank" rel="noreferrer"><div className="gitHubIcon"></div></a>
                         </div>
                     </div>
                     <div className="item">
                         <div className="questionIcon"></div>
                         <div className="projectName">Comming soon</div>
                         <div className="link">
-                            <a href="/" target="_blank" rel="noreferrer">App</a>
-                            <a href="blank" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="/" target="_blank" rel="noreferrer"><div className="webAppIcon"></div></a>
+                            <a href="/" target="_blank" rel="noreferrer"><div className="gitHubIcon"></div></a>
                         </div>
                     </div>
                 </div>
